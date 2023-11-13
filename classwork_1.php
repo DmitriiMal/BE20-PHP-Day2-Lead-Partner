@@ -118,6 +118,46 @@ convertTime(200);
   <!-- ---------- -->
   <h1>Exercise 6</h1>
   <!-- ---------- -->
+
+  <form action="classwork_1.php" method="POST" class="row row-cols-2 mb-5">
+
+  <label for="firstname" class="col-4 my-2">Enter your firstname</label>
+  <input type="text" name="firstname" id="firstname" class="col-8 my-2">
+
+  <label for="lastname" class="col-4 my-2">Enter your lastname</label>
+  <input type="text" name="lastname" id="lastname" class="col-8 my-2">
+  
+  <label for="age" class="col-4 my-2">Enter your age</label>
+  <input type="number" name="age" id="age" class="col-8 my-2">
+
+  <label for="hobbies" class="col-4 my-2">Enter your hobbies</label>
+  <textarea name="hobbies" id="hobbies" class="col-8 my-2" rows="4"></textarea>
+
+  <input type="submit" name="submit" class="btn btn-outline-light col-4 my-2">
+
+</form>
+
+<?php 
+if(isset($_POST['submit'])){
+  if (strlen($_POST['firstname']) > 5){
+    echo "<div class='text-success-emphasis'>{$_POST['firstname']}</div>";
+  } else {echo "<div class='text-danger-emphasis'>{$_POST['firstname']}</div>";}
+}
+
+if(isset($_POST['submit'])){
+  if (strlen($_POST['lastname']) > 5){
+    echo "<div class='text-success-emphasis'>{$_POST['lastname']}</div>";
+  } else {echo "<div class='text-danger-emphasis'>{$_POST['lastname']}</div>";}
+}
+
+if(isset($_POST['submit'])){
+  if (strlen($_POST['hobbies']) > 5){
+    echo "<div class='text-success-emphasis'>{$_POST['hobbies']}</div>";
+  } else {echo "<div class='text-danger-emphasis'>{$_POST['hobbies']}</div>";}
+}
+?>
   </div>
 </body>
 </html>
+
+<!-- strlen() -->
