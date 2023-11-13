@@ -28,7 +28,11 @@ if(isset($_GET['submit']))
 {
   if($_GET["firstname"] || $_GET["lastname"])
   {
-    echo "<h4 class='my-3'>Welcome {$_GET["firstname"]} {$_GET["lastname"]}!</h4>";
+    echo "<h4 class='my-3 text-success-emphasis'>Welcome {$_GET["firstname"]} {$_GET["lastname"]}!</h4>";
+  }
+  else 
+  {
+    echo "<p class='text-secondary'>please insert your name, or please insert your surname</p>";
   }
 }
   ?>
