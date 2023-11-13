@@ -45,11 +45,11 @@ if(isset($_POST['submit']))
 }
   ?>
 
-  <hr class="mt-4">
+  <hr class="mt-5">
   <!-- ---------- -->
   <h1>Exercise 2</h1>
   <!-- ---------- -->
-  
+
   <?php
   $num1 = 3;
   $num2 = 2;
@@ -60,6 +60,26 @@ function divide($val1, $val2){
 }
 $value = divide($num1, $num2);
 echo "<p>$num1 / $num2 = $value</p>"
+  ?>
+
+<hr class="mt-5">
+  <!-- ---------- -->
+  <h1>Exercise 3</h1>
+  <!-- ---------- -->
+  <?php
+$num3 = 3;
+$num4 = 4;
+$num5 = 5;
+
+function getSumAv($val1, $val2, $val3) {
+  $sum = $val1 + $val2 + $val3;
+  $average = $sum / 3;
+  echo "<p>Sum of $val1, $val2 and $val3 is <strong>$sum</strong></p>";
+  echo "<p>Average of $val1, $val2 and $val3 is <strong>$average</strong></p>";
+
+}
+
+getSumAv($num3, $num4, $num5);
   ?>
   </div>
 </body>
