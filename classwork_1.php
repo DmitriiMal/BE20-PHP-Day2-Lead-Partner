@@ -44,6 +44,23 @@ if(isset($_POST['submit']))
  }
 }
   ?>
+
+  <hr class="mt-4">
+  <!-- ---------- -->
+  <h1>Exercise 2</h1>
+  <!-- ---------- -->
+  
+  <?php
+  $num1 = 3;
+  $num2 = 2;
+
+function divide($val1, $val2){
+  $result = $val1 / $val2;
+  return $result;
+}
+$value = divide($num1, $num2);
+echo "<p>$num1 / $num2 = $value</p>"
+  ?>
   </div>
 </body>
 </html>
