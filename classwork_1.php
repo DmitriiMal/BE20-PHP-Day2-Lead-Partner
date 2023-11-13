@@ -74,13 +74,50 @@ $num5 = 5;
 function getSumAv($val1, $val2, $val3) {
   $sum = $val1 + $val2 + $val3;
   $average = $sum / 3;
-  echo "<p>Sum of $val1, $val2 and $val3 is <strong>$sum</strong></p>";
-  echo "<p>Average of $val1, $val2 and $val3 is <strong>$average</strong></p>";
+  echo "<p>Sum of $val1, $val2 and $val3 is: <strong>$sum</strong></p>";
+  echo "<p>Average of $val1, $val2 and $val3 is: <strong>$average</strong></p>";
 
 }
 
 getSumAv($num3, $num4, $num5);
   ?>
+
+<hr class="mt-5">
+  <!-- ---------- -->
+  <h1>Exercise 4</h1>
+  <!-- ---------- -->
+  <?php
+function getAreaVolume($width, $height, $depth){
+  $area = $width * $height;
+  $volume = $width * $height * $depth;
+
+  echo "<p>The area of the box is: <strong>$area</strong></p>";
+  echo "<p>The volume of the box is: <strong>$volume</strong></p>";
+}
+
+getAreaVolume(3, 4, 6);
+// ????????????????????
+  ?>
+
+<hr class="mt-5">
+  <!-- ---------- -->
+  <h1>Exercise 5</h1>
+  <!-- ---------- -->
+<?php 
+
+function convertTime($val){
+  $hours = round($val / 60);
+  $minutes = $val % 60;
+  echo "$val minutes = $hours hour(s) and $minutes minute(s).";
+}
+
+convertTime(200);
+?>
+
+<hr class="mt-5">
+  <!-- ---------- -->
+  <h1>Exercise 6</h1>
+  <!-- ---------- -->
   </div>
 </body>
 </html>
